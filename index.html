@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>PixelPlush ChatFlakes Particles Overlay</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6EJRXTPH3Z"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-6EJRXTPH3Z');
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/tinycolor2/dist/tinycolor-min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pinkfluffyunicorn/dist/pinkfluffyunicorn.min.js"></script>
+    <style>
+        * {
+            background-color: transparent;
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="unicorn-display"></div>
+    <script src="web/chatflakes.min.js"></script>
+    <script>
+      const params = new URLSearchParams( location.search );
+      setupGame( "PixelPlush ChatFlakes", {
+          path: "https://ghcdn.rawgit.org/pixelplush/assets"
+      },
+      {
+        channel: params.get( "channel" ),
+        oauth: params.get( "oauth" ),
+        nth: params.get( "nth" ),
+        leaves: params.get( "leaves" ),
+        leaves2: params.get( "leaves2" ),
+        snow: params.get( "snow" ),
+        snowflakes: params.get( "snowflakes" ),
+      });
+    </script>
+  </body>
+</html>
